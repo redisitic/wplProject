@@ -1,13 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>wplProject</title>
+</head>
+<body>
+  <div id="navBarContainer">
+    <div id="navOuterFlex">
+      <img id="logo" src="/imgs/logo.svg">
+      <div id="navInnerFlex">
+        <span><button class="navButton">Home</button></span>
+        <span><button class="navButton">About Us</button></span>
+        <span><button class="navButton">SignIn</button></span>
+        <span><button class="navButton">SignUp</button></span>
+      </div>
+    </div>
+    <div class="backdrop"></div>
+  </div>
+<div class="pageHero">
+  <div class="mainTitle">
+    <span id="gradCol">One Step Solution</span>
+    <span>for immediate</span>
+    <span>health concerns.</span>
+    <span><button class="heroButton">Get Started</button></span>
+  </div>
+  <div id="heroImg">
+    <img src="/imgs/coupleDoc.svg">
+  </div>
+</div>
+<hr class="divLine">
+<div class="masterFeature" id="features">
+  <div class="featureHead">
+    <span>
+      <h2>FEATURES WE PROVIDE</h2>
+    </span>
+    <span>
+      <h1>Quick Booking</h1>
+    </span>
+    <span>Book and manage your appointments with just a few clicks</span>
+  </div>
+  <div class="embCard">
+    <span class="featImg">
+      <img src="/imgs/food.svg">
+    </span>
+    <span class="featTit">Trusted Docs</span>
+    <span class="featDes">
+      Our Doctors are verified with KYC and follow Indian regulations.
+    </span>
+  </div>
+  <div class="embCard">
+    <span class="featImg">
+      <img src="/imgs/bot.svg">
+    </span>
+    <span class="featTit">Huge Network</span>
+    <span class="featDes">
+      We boast a huge network of Doctors and Medical Pratiotioners
+    </span>
+  </div>
+</div>
+<div class='footerHolder'>
+  <div class='footerContainer'>
+
+    <div class='ThelogoContainer'>
+      <img src='/imgs/logo.svg'>
+      <p>Generalizing aid from home </p>
+      <ul>
+        <li>
+          <img src="/imgs/SocialMedia/Facebook.svg">
+        </li>
+        <li>
+          <img src="/imgs/SocialMedia/Instagram.svg">
+        </li>
+        <li>
+          <img src="/imgs/SocialMedia/LinkedIn.svg">
+        </li>
+        <li>
+          <img src="/imgs/SocialMedia/Twitter.svg">
+        </li>
+        <li>
+          <img src="/imgs/SocialMedia/YouTube.svg">
+        </li>
+      </ul>
+    </div>
+
+    <div class="footerContacts">
+      <p class="footerGreen">Contact Us</p>
+      <span>
+        <span>
+          <img src="/imgs/Contacts/Email.svg">
+        </span>
+        <span>rhythm.juneja@somaiya.com</span>
+      </span>
+      <span>
+        <span>
+          <img src="/imgs/Contacts/Phone.svg">
+        </span>
+        <span>+91 96256 45274</span>
+      </span>
+      <span>
+        <span>
+          <img src="/imgs/Contacts/Mark.svg">
+        </span>
+        <span>KJSCE, Somaiya Vidyavihaar University, Mumbai, 400067</span>
+      </span>
+    </div>
+  </div>
+   
+    <div>
+      <hr class="divLine">
+    <p class='copyrightContainer'>
+    © Copyright <span class="year"></span> - Team Brutal.ly. All rights reserved. For more information on our Terms and Conditions Click Here
+    </p>
+  </div>
+</div>
+<script type="module" src="main.js"></script>
+</body>
 </html>
