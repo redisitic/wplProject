@@ -103,7 +103,6 @@ body{
   display: flex;
   justify-content: center;
   cursor: pointer;
-  
   background:linear-gradient(#121213, #121213), linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),  linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
   background-origin: border-box;
   background-clip: padding-box, border-box, border-box;
@@ -158,10 +157,10 @@ body{
   animation: separator-width 1s ease-out forwards;
 }
 @keyframes separator-width {
-  0% {
+  0%{
     width: 0;
   }
-  100% {
+  100%{
     width: 80%;
   }
 }
@@ -220,13 +219,11 @@ body{
   border-radius: 48px 48px 0 0;
   position: relative;
 }
-
 .footerHolder {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-
 .footerContacts {
   padding-right: 5%;
   display: flex;
@@ -236,7 +233,6 @@ body{
   font-size: 16px;
   align-items: center;
 }
-
 .footerContacts > span {
   display: flex;
   flex-direction: row;
@@ -252,12 +248,10 @@ body{
   height: 40px;
   width: auto;
 }
-
 .footerGreen {
   font-size: 24px;
   color: #3cf75d;
 }
-
 .footerContainer {
   display: flex;
   flex-direction: row;
@@ -273,30 +267,25 @@ body{
   padding-left: 5%;
   font-size: 14px;
 }
-
 .divLine {
   width: 90%;
   margin: auto;
   margin-top: 3vh;
   margin-bottom: 1vh;
 }
-
 .logoHolder {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
-
 .downloadLogoHolder {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
-
 .downloadLogoHolder > img {
   width: 160px;
 }
-
 .copyrightContainer {
   text-align: center;
   color: #ffffff;
@@ -373,7 +362,6 @@ body{
     margin-top: 15vh;
     padding-bottom: 10vh;
   }
-
   .embCard {
     display: flex;
     flex-direction: column;
@@ -382,11 +370,9 @@ body{
     flex-basis: 100px;
     align-self: center;
   }
-
   #heroImg {
     display: none;
   }
-
   .mainTitle {
     align-items: center;
     align-self: center;
@@ -396,13 +382,11 @@ body{
   #gradCol {
     text-align: center;
   }
-
   .heroButton {
     justify-self: center;
     margin: auto;
   }
 }
-
 @media screen and (max-width: 370px) {
   .downloadLogoHolder {
     flex-direction: column;
