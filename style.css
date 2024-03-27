@@ -14,6 +14,9 @@
   --white: #fff;
   --black: #000;
 }
+*, html{
+  scroll-behavior: smooth !important;
+}
 body{
     background-color: #050505;
     font-family: Roboto;
@@ -21,6 +24,7 @@ body{
     margin: 0;
     padding: 0;
     font-size: 3vh;
+    scroll-behavior: smooth;
 }
 #navBarContainer{
   background-color: rgba(0, 0, 0, 0);
@@ -85,6 +89,13 @@ body{
   flex-direction: column;
   gap: 2vh;
 }
+.mainTitle > span{
+  transition-duration: 300ms;
+}
+.mainTitle > span:hover{
+  scale: 110%;
+  transition-duration: 300ms;
+}
 #gradCol{
   background: -webkit-linear-gradient(0deg, #77f216, #16f2ca);
   -webkit-background-clip: text;
@@ -123,11 +134,21 @@ body{
   display: flex;
   justify-content: center;
   cursor: pointer;
-  background-color: #050505;
+  background-color: rgba(64, 64, 64, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition-duration: 300ms;
 }
 .navButton:hover{
-  background-color: #222;
+  background-color: rgba(64, 64, 64, 0.4);
   transition-duration: 300ms;
+  scale: 110%;
+}
+.greenButton{
+  background-color: rgba(16, 128, 96, 0.2);
+}
+.greenButton:hover{
+  background-color: rgba(16, 128, 96, 0.4);
 }
 .heroButton::before {
   content: '';
@@ -215,8 +236,8 @@ body{
   max-width: 500px;
 }
 .footerHolder {
-  background-image: linear-gradient(45deg, #313131, #1a1a1a);
-  border-radius: 48px 48px 0 0;
+  font-size: 1vh;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(24, 24, 24, 255));
   position: relative;
 }
 .footerHolder {
@@ -230,7 +251,7 @@ body{
   flex-direction: row;
   gap: 28px;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 2vh;
   align-items: center;
 }
 .footerContacts > span {
@@ -249,7 +270,7 @@ body{
   width: auto;
 }
 .footerGreen {
-  font-size: 24px;
+  font-size: 3vh;
   color: #3cf75d;
 }
 .footerContainer {
@@ -265,7 +286,7 @@ body{
   padding-top: 40px;
   padding-bottom: 0px;
   padding-left: 5%;
-  font-size: 14px;
+  font-size: 0.2vh;
 }
 .divLine {
   width: 90%;
@@ -315,6 +336,10 @@ body{
   width: 30px;
   height: 30px;
   margin-right: 10px;
+}
+.scrollAnchor{
+  scroll-behavior: inherit;
+  text-decoration: none;
 }
 @media screen and (max-width: 1023px) {
   #navInnerFlex{
