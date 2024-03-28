@@ -492,6 +492,13 @@ body{
     justify-self: center;
     margin: auto;
   }
+  .cardOt{
+    height: 25rem;
+  }
+  .trioFeatures{
+    flex-direction: column;
+    gap: 2vh;
+  }
 }
 @media screen and (max-width: 370px) {
   .downloadLogoHolder {
