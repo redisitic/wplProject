@@ -171,13 +171,14 @@ body{
 }
 .divLine{
   margin-top: 6vh;
+  margin-bottom: 6vh;
   width: 80%;
   border-radius: 25%;
   border: 2px solid #47f26f;
   width: 0;
-  animation: separator-width 1s ease-out forwards;
+  animation: widthGrow 1s ease-out forwards;
 }
-@keyframes separator-width {
+@keyframes widthGrow {
   0%{
     width: 0;
   }
@@ -194,8 +195,9 @@ body{
   padding-bottom: 10vh;
 }
 .featureHead {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   gap: 0px;
 }
 .featureHead > span > h1 {
@@ -209,15 +211,79 @@ body{
   color: #8a8a8a;
   max-width: 500px;
 }
-.featureHead > span > h2 {
-  font-size: 32px;
+.subTitle{
+  font-size: 6vh;
   font-weight: bold;
   letter-spacing: 5px;
   background: -webkit-linear-gradient(0deg, #77f216, #16f2ca);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 0px 0px 0px 0px;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+}
+.trioFeatures{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8%;
+}
+.cardOt {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 22rem;
+  width: 20rem;
+  position: relative;
+  gap: 2vh;
+  transition-duration: 300ms;
+}
+.cardOt:hover{
+  transition-duration: 300ms;
+  scale: 110%;
+}
+.cardOt::before {
+  content: '';
+  background-color: rgba(255,255,255,0.01);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(50px);
+  clip-path: polygon(evenodd, 
+    0 0, 
+    100% 0, 
+    100% 100%, 
+    0 100%, 
+    0 0, 0.3rem 0.3rem, calc(100% - 0.3rem) 0.3rem, calc(100% - 0.3rem) calc(100% - 0.3rem), 0.3rem calc(100% - 0.3rem), 0.3rem 0.3rem)
+}
+.featButton{
+  display: flex;
+  flex-direction: row;
+  background-color: #5555ff;
+  color: #fff;
+  font-size: 2vh;
+  text-align: center;
+  transition-duration: 300ms;
+  justify-content: center;
+}
+.featButton > span{
+  padding: 1vh;
+  ;
+}
+.featButton:hover{
+  background-color: #ff5555;
+  transition-duration: 300ms;
+  scale: 110%;
+}
+.spcButton{
+  margin-top: 5vh;
+}
+.inCard{
+  padding-left: 3vh;
+  padding-right: 3vh;
+  padding-top: 1vh;
 }
 .embCard {
   display: flex;
@@ -234,6 +300,18 @@ body{
   font-size: 24px;
   color: #8a8a8a;
   max-width: 500px;
+}
+.bookSec{
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  justify-content: center;
+  margin-top: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+.form-group{
+  margin: 2vh;
 }
 .footerHolder {
   font-size: 1vh;
